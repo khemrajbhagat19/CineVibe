@@ -169,7 +169,6 @@ npm run dev
 ```
 
 Open `http://127.0.0.1:5173`.
-
 The Vite development proxy forwards `/api` requests to `http://127.0.0.1:8001`. Keep both terminals running. If port 5173 is already occupied, find its actual PID using `netstat -ano | findstr :5173`, then stop that PID (not an example PID) or close the existing Vite terminal.
 
 Default admin account is created on first backend startup from `backend/.env`: `admin@cinevibe.local`. Set a new password in that file before use. If an admin user already exists in the SQLite database, changing the environment password does not reset that existing account.
